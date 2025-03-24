@@ -1,0 +1,1 @@
+/Users/amrutapatill/projects/student_details/build/app/intermediates/cxx/RelWithDebInfo/5s106n4g/obj/x86_64

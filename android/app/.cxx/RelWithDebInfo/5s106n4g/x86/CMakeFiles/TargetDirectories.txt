@@ -1,0 +1,2 @@
+/Users/amrutapatill/projects/student_details/android/app/.cxx/RelWithDebInfo/5s106n4g/x86/CMakeFiles/edit_cache.dir
+/Users/amrutapatill/projects/student_details/android/app/.cxx/RelWithDebInfo/5s106n4g/x86/CMakeFiles/rebuild_cache.dir
