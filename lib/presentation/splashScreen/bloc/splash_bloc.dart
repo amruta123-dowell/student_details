@@ -19,8 +19,7 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
   FutureOr<void> _navigateToHome(
       SplashInitialEvent event, Emitter<SplashState> emit) {
     Future.delayed(const Duration(milliseconds: 700), () {
-
-      NavigatorService.pushNamed(AppRoutes.homeScreen);
+      NavigatorService.pushNamedAndRemoveUntil(AppRoutes.homeScreen);
     });
   }
 }

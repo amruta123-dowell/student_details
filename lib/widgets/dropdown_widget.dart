@@ -1,5 +1,6 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../utils/image_constant.dart';
 
@@ -8,6 +9,7 @@ class DropDownWidget<T> extends StatefulWidget {
   final Function(T) onChanged;
   final T? selectedItem;
   final Color? borderColor;
+
   const DropDownWidget(
       {super.key,
       required this.itemList,
@@ -23,13 +25,13 @@ class _DropDownWidgetState<T> extends State<DropDownWidget<T>> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 44,
-        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+        height: 48,
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
         decoration: BoxDecoration(
             border: Border.all(
               color: Colors.black,
             ),
-            borderRadius: BorderRadius.circular(4)),
+            borderRadius: BorderRadius.circular(24)),
         child: DropdownButtonHideUnderline(
             child: DropdownButton2<T>(
           isExpanded: true,
@@ -72,7 +74,7 @@ class _DropDownWidgetState<T> extends State<DropDownWidget<T>> {
             padding: EdgeInsets.only(left: 0, right: 0),
           ),
           iconStyleData:
-              IconStyleData(icon: Image.asset(ImageConstant.arrowDownImg)),
+              IconStyleData(icon: SvgPicture.asset(ImageConstant.arrowDownImg)),
           dropdownStyleData: DropdownStyleData(
             maxHeight: 200,
             decoration: BoxDecoration(
