@@ -6,3 +6,7 @@ class HomeEvent extends Equatable {
   @override
   List<Object> get props => [];
 }
+
+class InitializeHomeEvent extends HomeEvent {}
+
+class GetStudentListEvent extends HomeEvent {}
